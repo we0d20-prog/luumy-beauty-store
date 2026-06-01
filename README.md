@@ -79,7 +79,7 @@ Complete dashboard for managing products, categories, orders, reports, and refun
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/luumy-beauty-store.git
+git clone https://github.com/we0d20-prog/luumy-beauty-store.git
 ```
 
 2. Move the project folder into htdocs
