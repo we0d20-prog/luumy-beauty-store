@@ -193,4 +193,4 @@ luumy-beauty-store/
 
 Waleed Sami
 
-- GitHub: https://github.com/اسم_حسابك
+- GitHub: https://github.com/we0d20-prog/luumy-beauty-store.git
