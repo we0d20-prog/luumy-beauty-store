@@ -1,0 +1,156 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    margin: 20px auto;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    animation: fadeUp 0.7s ease-out;
+}
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+    background: #9D1F53;
+    color: #fff;
+    font-size: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    animation: pop 0.5s ease-out;
+}
+
+.order-number {
+    background: #fff;
+    color: #9D1F53;
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 15px 0 25px;
+    font-weight: 600;
+}
+
+.btn-track {
+    background: #9D1F53;
+    color: #fff;
+    border-radius: 12px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-track:hover {
+    background: #9D1F53;
+    color: #fff;
+}
+
+.btn-track:active {
+    transform: scale(0.97);
+}
+
+.btn-home {
+    margin-top: 15px;
+    color: #9D1F53;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-home:hover {
+    text-decoration: underline;
+}
+
+.success-card h4 {
+    font-size: 20px;
+}
+
+@media (max-width:768px){
+
+    body{
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .success-card{
+        padding:28px 18px;
+        width:100%;
+        max-width:100%;
+        text-align: center;
+        border-radius:16px;
+        margin:10px auto;
+        overflow:hidden;
+    }
+
+    .success-icon {
+        width:70px;
+        height:70px;
+        font-size:35px;
+    }
+
+     .btn-track{
+        min-height:48px;
+        font-size:15px;
+        border:none;
+    }
+
+    .btn-home{
+        display:inline-block;
+        margin-top:18px;
+        font-size:14px;
+    }
+
+    .order-number{
+        font-size:14px;
+        word-break:break-word;
+    }
+
+    .success-card h4{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .text-muted{
+        font-size:14px;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

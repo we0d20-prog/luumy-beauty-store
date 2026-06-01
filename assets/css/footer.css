@@ -1,0 +1,198 @@
+/* Features Section */
+
+.features-section {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px 20px;
+    border: 1px solid #f0eef2;
+    margin: 40px auto;
+    width: 95%;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.feature-item i {
+    font-size: 42px;
+    color: #9D1F53;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.feature-item h6 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+}
+
+.feature-item p {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0;
+}
+
+/* خطوط فاصلة للديسكتوب */
+@media (min-width: 768px) {
+
+    .feature-item:not(:last-child) {
+        border-left: 1px solid #eee;
+    }
+}
+
+/* Footer */
+.premium-footer {
+    background: #3d4349;
+    padding: 40px 0;
+    color: white;
+    margin-top: 70px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* الأعمدة */
+.footer-left,
+.footer-center,
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    justify-content: flex-start;
+}
+
+.footer-center {
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-right {
+    justify-content: flex-end;
+}
+
+/* اللوقو */
+.footer-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.footer-logo:hover {
+    color: #c42e6e;
+}
+
+/* الروابط */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #c42e6e;
+    padding-right: 5px;
+}
+
+/* السوشيال */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #c42e6e;
+    transform: scale(1.2);
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .features-section {
+        padding: 40px 15px;
+    }
+
+    .feature-item {
+        margin-bottom: 25px;
+    }
+
+    .feature-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .feature-item i {
+        font-size: 32px;
+    }
+
+    .feature-item:not(:last-child) {
+        border-bottom: 1px solid #f0eef2;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    /* اللوقو أول */
+    .footer-right {
+        order: -1;
+    }
+
+    .footer-logo img {
+        height: 60px;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        font-size: 22px;
+    }
+}

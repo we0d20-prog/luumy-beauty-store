@@ -1,0 +1,830 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 115px;
+    direction: rtl;
+    background: #f8f9fa;
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9D1F53;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* HEADER - STICKY */
+.site-header {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #fff !important;
+    z-index: 999999;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+.site-header.scrolled {
+    background: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Top Header */
+.top-header {
+    padding: 10px 0;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Right */
+.header-right img {
+    height: 55px;
+}
+
+/* Center */
+.header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Left */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-link {
+    color: #9D1F53;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* SEARCH BOX */
+/* تنسيق مربع البحث */
+.search-box {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    height: 45px;
+    padding: 0 45px 0 20px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    background: #f5f5f5;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    background: #fff;
+    border-color: #9D1F53;
+    box-shadow: 0 0 0 3px rgba(157, 31, 83, 0.1);
+}
+
+/* نتائج البحث */
+.live-search-results {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+.live-search-results a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.live-search-results a:hover {
+    background: #f8f9fa;
+}
+
+.live-search-results img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.live-search-results .search-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.live-search-results .search-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.live-search-results .search-price {
+    font-size: 12px;
+    font-weight: bold;
+    color: #9D1F53;
+}
+
+/* NAVBAR */
+.bottom-header {
+    background: rgba(255,255,255,0.95);
+}
+
+.bottom-header a, .nav-link {
+    color: #9D1F53 !important;
+    font-weight: bold;
+}
+
+.active-category {
+    border-bottom: 2px solid #9D1F53;
+}
+
+/* CART BUTTON */
+.cart-btn {
+    position: relative;
+    font-size: 22px;
+    color: #9D1F53;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 18px;
+    text-align: center;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+/* BUTTONS */
+.btn-brand {
+    background-color: #9D1F53;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.btn-brand:hover {
+    background-color: #7a1841;
+    color: #fff;
+}
+
+/* HERO SECTION */
+.hero-clean {
+    min-height: 320px;
+    overflow: hidden;
+}
+.hero-image img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+.hero-logo {
+    height: 100px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    display: inline-block;
+}
+.hero-content {
+    background: linear-gradient(135deg, #F1DFE9, #EBD3DD);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    min-height: 65vh;
+}
+.hero-text {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* CATEGORY SECTION */
+.category-slider {
+    width: 100%;
+}
+.category-track {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+.category-track::-webkit-scrollbar {
+    display: none;
+}
+.category-item {
+    flex: 0 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+.category-image {
+    width: 155px;
+    height: 155px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.4s ease;
+}
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.category-name {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* PRODUCT CARD */
+.p-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    height: 100%;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.p-img-box {
+    display: block;
+    text-align: center;
+    height: 200px;
+    overflow: hidden;
+}
+.p-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.3s;
+}
+.p-title {
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 42px;
+    margin: 10px 0;
+}
+.p-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9D1F53;
+    margin-bottom: 10px;
+}
+.add-to-cart {
+    background: #9D1F53;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+    transition: 0.3s;
+}
+.add-to-cart:hover {
+    background: #7a1841;
+}
+
+/* PROMO BANNER (نظرة تسرق القلوب) */
+.promo-banner {
+    margin: 70px 0;
+}
+
+.promo-box {
+    background: #f6dfe3;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    min-height: 300px;
+    isolation: isolate;
+    border-radius: 30px;
+}
+
+/* تنسيق الصور بشكل عام */
+.promo-img-left,
+.promo-img-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.promo-img-left img,
+.promo-img-right img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* الصورة اليسرى */
+.promo-img-left {
+    right: 20px;
+    left: auto;
+}
+
+/* الصورة اليمنى */
+.promo-img-right {
+    left: -20px;
+    right: auto;
+}
+
+/* المحتوى النصي */
+.promo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    padding: 0 15px;
+}
+
+.promo-content h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #2a2a2a;
+}
+
+.promo-content p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* BEAUTY SECTION */
+.beauty-section {
+    margin-top: 60px;
+}
+.beauty-text, .beauty-text-gray {
+    padding: 60px;
+    text-align: center;
+}
+.beauty-text {
+    background: #C68BAA;
+    color: white;
+}
+.beauty-text-gray {
+    background: #5E5D60;
+    color: white;
+}
+.beauty-text h2, .beauty-text-gray h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.beauty-text p, .beauty-text-gray p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* NAIL HERO SECTION */
+.nail-hero-section {
+    margin: 80px 0;
+}
+
+.nail-hero-box {
+    position: relative;
+    background: linear-gradient(135deg, #f6dfe3, #fce9ec);
+    padding: 50px 20px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.nail-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.nail-hero-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.nail-hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الصور */
+.nail-hero-img-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* الصورة اليسرى */
+.nail-hero-left {
+    left: 0;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    transform: none;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* الصورة اليمنى */
+.nail-hero-right {
+    right: 0;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    transform: none;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nail-hero-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    
+    /* إخفاء صور promo-banner */
+    .promo-img-left,
+    .promo-img-right {
+        display: none !important;
+    }
+    
+    /* إخفاء صور nail-hero-section */
+    .nail-hero-img-box,
+    .nail-hero-left,
+    .nail-hero-right {
+        display: none !important;
+    }
+    
+    /* تعديل شكل الصندوق بدون صور */
+    .promo-box {
+        padding: 40px 20px !important;
+        min-height: auto !important;
+        border-radius: 20px;
+    }
+    
+    .nail-hero-box {
+        padding: 40px 20px !important;
+        min-height: auto !important;
+        border-radius: 20px;
+    }
+    
+    /* تصغير حجم الخط */
+    .nail-hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .nail-hero-content p {
+        font-size: 16px;
+    }
+}
+
+/* الجوال */
+@media (max-width: 768px) {
+    
+    /* Fix Header Layout */
+    .header-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-right, .header-center, .header-left {
+        width: 100%;
+        justify-content: center;
+    }
+    .header-center {
+        order: 2;
+    }
+    .header-left {
+        order: 3;
+        gap: 15px;
+    }
+    .search-box {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    /* Navbar scroll */
+    .bottom-header .nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .bottom-header .nav::-webkit-scrollbar {
+        display: none;
+    }
+    .nav-link {
+        white-space: nowrap;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    /* Hero Mobile */
+    .hero-image img {
+        height: 40vh;
+    }
+    .hero-logo {
+        height: 60px;
+    }
+    .hero-content {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    .hero-text p {
+        font-size: 15px;
+    }
+    
+    /* Categories Mobile */
+    .category-image {
+        width: 100px;
+        height: 100px;
+    }
+    .category-name {
+        font-size: 14px;
+    }
+    
+    /* Latest Products: 2 cards per row */
+    .row > .col-6 {
+        width: 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        padding: 0 8px;
+    }
+    .container .row {
+        --bs-gutter-x: 12px;
+    }
+    .col-lg-3.col-md-4.col-6.mb-4 {
+        width: 50%;
+        padding: 6px;
+    }
+    .p-card{
+        height: 100%;
+        border-radius: 14px;
+    }
+    .p-img {
+        height: 140px;
+        object-fit: contain;
+    }
+    .p-img-box {
+        height: 150px;
+    }
+    .p-title {
+        font-size: 13px;
+        min-height: 40px;
+    }
+    .p-price {
+        font-size: 14px;
+    }
+    .add-to-cart {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+   
+    /* Promo Banner */
+    .promo-box {
+        padding: 30px 15px !important;
+        border-radius: 20px;
+    }
+    
+    .promo-content h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .promo-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .promo-content .btn {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+    
+    .beauty-promo .promo-text {
+        margin-bottom: 45px;
+        /*text-align: center;*/
+    }
+    
+    /* Beauty Section */
+    .beauty-text h2, .beauty-text-gray h2 {
+        font-size: 32px;
+    }
+    
+    .beauty-text p, .beauty-text-gray p {
+        font-size: 18px;
+    }
+    
+    .beauty-text, .beauty-text-gray {
+        padding: 40px 20px;
+    }
+    
+    .beauty-section img {
+        height: 300px !important;
+        object-fit: cover;
+    }
+    
+    /* Nail Hero Mobile */
+    .nail-hero-box {
+        padding: 40px 20px !important;
+        border-radius: 20px;
+    }
+    
+    .nail-hero-content h2 {
+        font-size: 24px;
+    }
+    
+    .nail-hero-content p {
+        font-size: 14px;
+    }
+
+    .site-header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 999999 !important;
+        background: #fff !important;
+    }
+    
+    body {
+        padding-top: 115px !important;
+    }
+    /* search */
+    .search-box {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .search-input {
+        height: 42px !important;
+        font-size: 14px !important;
+        padding: 0 40px 0 15px !important;
+        width: 100% !important;
+    }
+
+    .search-icon {
+        right: 12px;
+        font-size: 14px;
+    }
+    .live-search-results {
+        max-height: 250px;
+    }
+    
+    .live-search-results a {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .live-search-results img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .live-search-results .search-name {
+        font-size: 13px;
+    }
+    
+    .live-search-results .search-price {
+        font-size: 11px;
+    }
+}
+
+/* جوال صغير جداً */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 22px;
+    }
+    
+    .category-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .promo-content h2 {
+        font-size: 20px !important;
+    }
+    
+    .promo-content p {
+        font-size: 12px !important;
+    }
+    
+    .beauty-text h2, .beauty-text-gray h2 {
+        font-size: 24px;
+    }
+    
+    .beauty-text p, .beauty-text-gray p {
+        font-size: 16px;
+    }
+    
+    .nail-hero-content h2 {
+        font-size: 22px;
+    }
+    
+    .nail-hero-box {
+        padding: 30px 15px !important;
+    }
+}
+

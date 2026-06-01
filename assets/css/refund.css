@@ -1,0 +1,98 @@
+
+body{
+    background: #f8f9fa;
+    font-family:'Cairo',sans-serif;
+    line-height: 1.8;
+}
+
+.container-refund{
+    max-width:600px;
+    margin:80px auto;
+}
+
+.card-refund{
+    background:#fff;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    border-radius:16px;
+}
+
+.title{
+    color: #9D1F53;
+    font-weight:bold;
+}
+
+.btn-main{
+    background: #9D1F53;
+    color:#fff;
+    border:none;
+    padding:12px;
+    font-weight:600;
+    transition: 0.2s ease;
+    border-radius: 10px;
+}
+
+.btn-main:hover{
+    background: #9D1F53;
+}
+
+.btn-main:active{
+    transform: scale(0.97);
+}
+
+.nav-link{
+    font-weight: bold;
+    color: #9D1F53 !important;
+    transition: 0.3s;
+}
+
+.search-box{
+    display:none !important;
+}
+
+.alert{
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+input[type="file"]{
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+     .btn-main{
+        min-height:48px;
+    }
+
+    .form-control{
+        min-height:48px;
+        font-size:14px;
+    }
+
+    textarea.form-control{
+        min-height:100px;
+    }
+
+    input[type="file"]{
+        font-size:13px;
+    }
+
+    .container-refund{
+        margin:30px 10px;
+    }
+
+    .card-refund{
+        padding: 15px;
+    }
+
+    h4{
+        font-size:20px;
+    }
+}

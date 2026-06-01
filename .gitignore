@@ -1,0 +1,15 @@
+/vendor/
+/node_modules/
+/.cache/
+/.idea/
+/.vscode/
+
+.env
+database.sql
+db.php
+
+*.zip
+*.rar
+
+Thumbs.db
+.DS_Store

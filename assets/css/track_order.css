@@ -1,0 +1,152 @@
+body{
+    direction: rtl;
+    background: #f8f9fa;
+    font-family:'Cairo',sans-serif;
+}
+
+.container-track{
+    max-width:750px;
+    margin:80px auto 40px auto;
+}
+
+.card-beauty{
+    background: #ffffff;
+    padding:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    margin-bottom:20px;
+    border-radius: 14px;
+}
+
+.title{
+    color: #9D1F53;
+    font-weight:bold;
+}
+
+.text-content{
+    text-align: right;
+}
+
+.btn-track{
+    background: #9D1F53;
+    color: #fff;
+    border:none;
+    padding:12px;
+    font-weight:700;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-track:hover{
+    background: #7d1642;
+}
+
+/* شكل المنتجات */
+.product-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background: #f7fafc;
+    border-radius:12px;
+    padding:12px 15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.05);
+    margin-bottom:12px;
+}
+
+.product-card img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    border-radius:10px;
+    background: #fff;
+    padding:8px;
+}
+
+.product-card a.btn-track{
+    width:auto;
+    padding:8px 14px;
+    font-size:14px;
+    border-radius:10px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+.nav-link{
+    font-weight:bold;
+    color: #9D1F53 !important;
+    transition: 0.3s;
+}
+
+.search-box{
+    display:none !important;
+}
+
+/* للجوال */
+@media (max-width:768px){
+
+    body{
+       overflow-x:hidden;
+    }
+
+    .card-beauty{
+       padding:18px 14px;
+       border-radius:12px;
+    }
+
+    .btn-track{
+       min-height:48px;
+       font-size:14px;
+    }
+
+    .form-control{
+       min-height:48px;
+       font-size:14px;
+    }
+
+    .badge{
+       margin-top:6px;
+       display:inline-block;
+       font-size:12px;
+    }
+
+    .container-track{
+        margin:40px 15px;
+    }
+
+    .product-card{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+        padding:10px;
+        border-radius:14px;
+        align-items:center;
+    }
+
+    .product-card img{
+        width:70px;
+        height:70px;
+        margin:auto;
+        flex-shrink:0;
+    }
+
+    .product-card strong{
+       font-size:14px;
+       line-height:1.6;
+    }
+
+    .product-card span{
+       font-size:13px;
+    }
+
+    .alert{
+       font-size:13px;
+    }
+
+    .product-card .text-end{
+        text-align:center !important;
+    }
+
+    .product-card a.btn-track{
+        width:100%;
+    }
+}

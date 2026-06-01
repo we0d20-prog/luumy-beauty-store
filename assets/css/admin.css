@@ -1,0 +1,986 @@
+/****ADMIN CATEGORIES ****/
+
+body{
+    background: #f5f5f5;
+    font-family:'Cairo',sans-serif;
+}
+
+/*  الهيدر  */
+.card h3{
+    font-weight: bold;
+}
+
+/* الفورم */
+form .form-control{
+    height:45px;
+    border-radius:10px;
+}
+
+form button{
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* الجدول */
+table{
+    background:#fff;
+}
+
+table th{
+    background:#f8f9fa;
+    font-weight:bold;
+}
+
+table td img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* الأزرار */
+.btn-sm{
+    border-radius:8px;
+}
+
+/* موبايل  */
+@media (max-width:768px){
+
+    .container{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    /* الهيدر */
+    .card .d-flex{
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap:10px;
+    }
+
+    .card h3{
+        font-size:18px;
+    }
+
+    /* الفورم */
+    form .form-control{
+        height:42px;
+        font-size:14px;
+    }
+
+    form button{
+        font-size:14px;
+        padding:10px;
+    }
+
+    /* الجدول */
+    table th,
+    table td{
+        font-size:12px;
+        padding:6px;
+    }
+
+    table td img{
+        width:45px;
+        height:45px;
+    }
+
+    .table-responsive{
+        overflow-x:auto;
+    }
+
+    /* الأزرار */
+    .btn-sm{
+        width:100%;
+        padding:6px;
+        font-size:12px;
+        margin-bottom:5px;
+    }
+}
+ /**** ADMIN DASHBOARD ****/
+
+body {
+  background:  #f5f5f5;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* العنوان */
+h2{
+  font-weight: bold;
+}
+
+/* كروت الإحصائيات */
+.stat-card{
+  background: #fff;
+  border-radius:14px;
+  padding:18px;
+  text-align:center;
+  box-shadow:0 6px 15px rgba(0,0,0,.06);
+  transition: 0.3s;
+}
+
+.stat-card i{
+  font-size:28px;
+  margin-bottom:5px;
+}
+
+.stat-card h4{
+  font-weight: bold;
+  margin: 5px 0;
+  color: #222 ;
+}
+
+/* كروت الداشبورد */
+.dashboard-card{
+  background: #fff;
+  border-radius:16px;
+  padding:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+  text-align:center;
+  height:100%;
+  cursor: pointer;
+}
+
+.dashboard-card i{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.dashboard-card h5{
+  font-weight:bold;
+}
+
+/* زر تسجيل الخروج */
+.logout{
+  background: #dc3545 !important;
+  color: #fff !important;
+}
+
+/* موبايل  */
+@media (max-width:768px){
+
+  .container{
+      margin-top:20px !important;
+      margin-bottom:20px !important;
+   }
+
+  /* العنوان */
+  h2{
+    font-size:20px;
+  }
+
+  p{
+    font-size:13px;
+  }
+
+  /* الإحصائيات */
+  .stat-card{
+    padding:14px;
+  }
+
+  .stat-card i{
+    font-size:22px;
+  }
+
+  .stat-card h4{
+    font-size:18px;
+  }
+
+  /* الكروت */
+  .dashboard-card{
+    padding:18px;
+  }
+
+  .dashboard-card i{
+    font-size:28px;
+  }
+
+  .dashboard-card h5{
+    font-size:16px;
+  }
+
+  .dashboard-card p{
+    font-size:13px;
+  }
+
+}
+
+/****ADMIN-INVOICE ****/
+
+body{
+    background: #f5f5f5;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+
+.invoice-box{
+   background: #fff;
+   padding:30px;
+   border-radius:15px;
+   max-width:800px;
+   margin:auto;
+}
+
+/* أزرار الطباعة */
+.invoice-actions{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:15px;
+}
+
+/* للطباعة */
+@media print {
+
+    .invoice-actions,
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+    }
+
+    .invoice-box {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @page {
+        margin: 10mm;
+    }
+}
+
+/* موبايل */
+@media (max-width:768px){
+
+    .invoice-box{
+        padding:15px;
+    }
+
+    h4{
+        font-size:20px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    .invoice-actions{
+        flex-direction: column;
+        gap:10px;
+    }
+
+   .invoice-actions .btn{
+        width:100%;
+    }
+}
+
+/**** ADMIN LOGIN ****/
+
+body {
+    background: #f5f5f5;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    margin: 0;
+}
+
+/* صفحة تسجيل الدخول */
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+/* animation */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Inputs & Buttons */
+.form-control {
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.btn-main {
+    background: #9D1F53;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-main:disabled{
+    opacity:.8;
+    cursor:not-allowed;
+}
+
+.form-control:focus{
+    border-color:#9D1F53;
+    box-shadow:0 0 0 0.15rem rgba(157,31,83,.15);
+}
+
+/* تحسين الجوال */
+@media (max-width: 768px) {
+
+    .login-card {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 20px 15px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-main {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px){
+
+    .login-card{
+        border-radius:16px;
+    }
+
+}
+
+/****ADMIN ORDER_DETAILS ****/
+/* صفحة تفاصيل الطلب */
+.order-card{
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: none;
+}
+
+/* صورة المنتج */
+.product-img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* جدول */
+.table th,
+.table td{
+    vertical-align: middle;
+}
+
+/* تحسين عرض البيانات */
+.order-info strong{
+    display: block;
+    margin-bottom: 3px;
+    color: #555;
+}
+
+/* موبايل */
+@media (max-width:768px){
+
+    .product-img{
+        width: 55px;
+        height: 55px;
+        border:1px solid #eee;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .card-body{
+        padding: 15px;
+    }
+
+    .table{
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td{
+        padding:8px 6px;
+    }
+
+    .btn{
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .d-flex.justify-content-between{
+       flex-direction: column;
+       gap:10px;
+    }
+
+    .d-flex.justify-content-between .btn{
+       width:100%;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width:480px){
+
+    h4{
+        font-size: 18px;
+    }
+
+    .product-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .table{
+        font-size: 13px;
+        min-width:600px;
+    }
+}
+
+/**** ADMIN ORDERS ****/
+/* صفحة إدارة الطلبات */
+
+/* كرت الطلب */
+.order-card{
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    margin-bottom: 15px;
+    transition: .2s;
+    border: none;
+}
+
+.order-card .btn{
+    border-radius:10px;
+}
+
+/* رأس الطلب */
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* معلومات الطلب */
+.order-meta{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+/* تحسين البادج */
+.badge{
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+/* أزرار الفلترة */
+.btn-group .btn{
+    min-width: 120px;
+}
+
+.form-select{
+    border-radius:10px;
+}
+
+/*  تحسين الموبايل */
+@media (max-width:768px){
+
+    .order-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .order-meta{
+        font-size: 13px;
+    }
+
+    .btn-group{
+        width: 100%;
+        display: flex;
+    }
+
+    .btn-group a{
+        flex: 1;
+        font-size: 13px;
+    }
+
+    .form-control{
+        font-size:14px;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width:576px){
+
+    .order-card{
+        padding: 5px;
+    }
+
+    .order-header{
+        font-size: 16px;
+    }
+
+    .form-select,
+    .btn{
+        font-size: 13px;
+    }
+}
+
+/**** ADMIN PRODUCTS ****/
+/* صفحة إدارة المنتجات */
+
+/* صورة المنتج */
+.product-img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* تحسين الجدول */
+.table-responsive{
+    overflow-x:auto;
+}
+
+/* تنسيق الجدول */
+.table th,
+.table td{
+    vertical-align:middle;
+}
+
+/* فورم الإدخال */
+form label{
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+/* تحسين البادجات */
+.badge{
+    font-size:13px;
+    padding:6px 10px;
+}
+
+/* زرار صغير */
+.btn-sm{
+    font-size:13px;
+    padding:5px 10px;
+}
+
+/* تنبيه المخزون */
+.alert strong{
+    font-size:16px;
+}
+
+/* تصميم الجوال */
+@media (max-width:768px){
+
+    /* الهيدر */
+    .card .d-flex{
+        flex-direction:column;
+        align-items:stretch !important;
+        gap:10px;
+    }
+
+    h3{
+        text-align:center;
+        font-size:22px;
+    }
+
+    .card h4{
+        text-align:center;
+    }
+
+    /* الفورم */
+    .form-control{
+        font-size:14px;
+    }
+
+    form .form-control{
+        font-size:14px;
+    }
+
+    /* تحويل الجدول لكروت */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+        display:block;
+        width:100%;
+    }
+
+    thead{
+        display:none;
+    }
+
+    table{
+        border:none;
+    }
+
+    table tr{
+        background:#fff;
+        margin-bottom:15px;
+        border-radius:14px;
+        padding:12px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        border:1px solid #eee;
+    }
+
+    table td{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:10px;
+        padding:10px 5px;
+        border:none !important;
+        border-bottom:1px solid #f1f1f1 !important;
+        text-align:left;
+        font-size:14px;
+    }
+
+    table td:last-child{
+        border-bottom:none !important;
+    }
+
+    table td::before{
+        content:attr(data-label);
+        font-weight:700;
+        color:#555;
+    }
+
+    /* صورة المنتج */
+    .product-img{
+        width:60px;
+        height:60px;
+        border-radius:10px;
+    }
+
+    /* الأزرار */
+    .btn-sm{
+        width:100%;
+        margin-top:5px;
+        margin-bottom:5px;
+        font-size:13px;
+        padding:8px;
+    }
+
+    .btn-group{
+        width:100%;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width:576px){
+
+    table td{
+        font-size:13px;
+    }
+
+    .badge{
+        font-size:12px;
+    }
+
+    .product-img{
+        width:50px;
+        height:50px;
+    }
+}
+
+/**** ADMAIN REFUNDS ****/
+/* صفحة طلبات الإرجاع*/
+
+.card-box{
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+    border: none;
+}
+
+/* الجدول */
+.table thead{
+    background: #111;
+    color: #fff;
+}
+
+/* صورة الإرجاع */
+.refund-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* الأزرار */
+.action-btn{
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* البادجات */
+.badge{
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+/* حالات الطلب */
+.status-pending{ background:#ffc107; color:#000; }
+.status-approved{ background:#198754; }
+.status-rejected{ background:#dc3545; }
+.status-refunded{ background:#000; }
+
+/* كروت الإحصائيات */
+.stat-card{
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+}
+
+/* موبايل */
+@media (max-width:768px){
+
+    .refund-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    table{
+        font-size: 13px;
+    }
+
+    .action-btn{
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .stat-card h3{
+        font-size: 20px;
+    }
+
+    .stat-card h5{
+        font-size: 14px;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width:576px){
+
+    table{
+        font-size: 12px;
+    }
+
+    .badge{
+        font-size: 12px;
+    }
+
+    .stat-card{
+        padding: 15px;
+    }
+}
+
+/* تحويل الإرجاع لكروت في الجوال */
+@media (max-width: 768px){
+
+    /* إخفاء شكل الجدول التقليدي */
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead{
+        display: none;
+    }
+
+    table tr{
+        background: #fff;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        padding: 10px;
+    }
+
+    table td{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 10px;
+        border: none;
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    table td::before{
+        content: attr(data-label);
+        font-weight: 600;
+        color: #555;
+    }
+
+    .refund-img{
+        width: 55px;
+        height: 55px;
+    }
+
+    .action-btn{
+        width: 100%;
+    }
+}
+
+/**** ADMIN REPORTS ****/
+/* صفحة التقارير*/
+
+.report-card{
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    border: none;
+}
+
+/* الجدول */
+.table th,
+.table td{
+    vertical-align: middle;
+}
+
+/* الرسم البياني */
+canvas{
+    max-width: 100%;
+}
+
+/* موبايل */
+@media (max-width:768px){
+
+    /* الهيدر */
+    .card .d-flex{
+        flex-direction:column;
+        align-items:stretch !important;
+        gap:10px;
+    }
+
+    h3{
+        text-align:center;
+        font-size:22px;
+    }
+
+    /* الكروت */
+    .report-card{
+        margin-bottom:15px;
+    }
+
+    .report-card h4{
+        font-size:18px;
+    }
+
+    .report-card h6{
+        font-size:13px;
+    }
+
+    /* الفورم */
+    form label{
+        font-size:13px;
+    }
+
+    .form-control{
+        font-size:14px;
+    }
+
+    /* الرسم */
+    canvas{
+        max-height:250px;
+    }
+
+    /* تحويل الجدول لكروت */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+        display:block;
+        width:100%;
+    }
+
+    thead{
+        display:none;
+    }
+
+    table{
+        border:none;
+    }
+
+    table tr{
+        background:#fff;
+        margin-bottom:15px;
+        border-radius:14px;
+        padding:12px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        border:1px solid #eee;
+    }
+
+    table td{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:10px;
+        padding:10px 5px;
+        border:none !important;
+        border-bottom:1px solid #f1f1f1 !important;
+        font-size:14px;
+        word-break:break-word;
+    }
+
+    table td:last-child{
+        border-bottom:none !important;
+    }
+
+    table td::before{
+        content:attr(data-label);
+        font-weight:700;
+        color:#555;
+    }
+}
+
+/* موبايل صغير */
+@media (max-width:576px){
+
+    table td{
+        font-size:13px;
+    }
+
+    .btn{
+        font-size:13px;
+    }
+}
+

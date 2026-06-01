@@ -1,0 +1,146 @@
+.p-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.25s;
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* IMAGE */
+.p-img-box {
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    margin-bottom: 15px;
+}
+
+.p-img {
+    max-width: 100%;
+    width: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* CONTENT */
+.p-body {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* TITLE */
+.p-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3.8em;
+    line-height: 1.5;
+}
+
+/* PRICE */
+.p-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #9D1F53;
+    margin-top: auto;
+    margin-bottom: 8px;
+}
+
+/* BUTTON */
+.add-to-cart {
+    width: 100%;
+    background: #9D1F53;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .p-card {
+        min-height: 370px;
+    }
+
+    .p-img-box {
+        height: 190px;
+    }
+
+    .p-img {
+        max-height: 170px;
+    }
+
+    .p-title {
+        font-size: 13px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    
+     .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .row {
+        --bs-gutter-x: 12px;
+    }
+
+    .p-card {
+        border-radius: 10px;
+        min-height: 320px;
+    }
+
+    .p-img-box {
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .p-img {
+        max-height: 130px;
+    }
+
+    .p-body {
+        padding: 8px;
+    }
+
+    .p-title {
+        font-size: 12px;
+        min-height: 3.4em;
+        margin-top: 6px;
+        line-height: 1.4;
+    }
+
+    .p-price {
+        font-size: 14px;
+    }
+
+    .add-to-cart {
+        font-size: 13px;
+        padding: 9px;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+}
