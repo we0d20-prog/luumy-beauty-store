@@ -88,7 +88,7 @@ git clone https://github.com/we0d20-prog/luumy-beauty-store.git
 5. Open in browser
 
 ```bash
-http://localhost/luumy-beauty-store
+http://localhost/luumybeauty
 ```
 
 ## Database
