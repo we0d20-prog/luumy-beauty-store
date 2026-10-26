@@ -4,10 +4,6 @@ An online beauty and cosmetics store developed using PHP and MySQL with a modern
 The system allows customers to browse products, add items to cart, place orders, track purchases, and request refunds.
 It also includes a complete admin dashboard for managing products, categories, orders, reports, and refunds.
 
-## Live Demo
-
-[View Website](https://luumybeauty.rf.gd)
-
 ## Preview
 
 ### Home Page
